@@ -1,0 +1,16 @@
+1.- Create a query to return the unique rows in a table.
+
+SELECT DISTINCT col1,col2,col3,...
+FROM table;
+
+2.- Write a command to insert values into a table
+
+INSERT INTO table(col1,col2,col3,...)
+VALUES (value1,value2,value3,...);
+
+3.- Create a query that joins two tables together. Note, all rows from the first table must be in the result-set (e.g. given customer and order tables, return all customers and any orders for each customer)
+
+SELECT *
+FROM customers 
+LEFT JOIN orders
+ON customers.col_name_X = orders.col_name_Y ;
